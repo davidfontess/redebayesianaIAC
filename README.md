@@ -4,9 +4,9 @@ Este projeto implementa um exemplo de Rede Bayesiana usando a biblioteca **pgmpy
 
 ## Git Clone
 
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/SandAyla/redebayesianaIAC
 
-cd <NOME_DO_REPOSITORIO>
+cd redebayesianaIAC
 
 ### Dependências
 
