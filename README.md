@@ -4,9 +4,9 @@ Este projeto implementa um exemplo de Rede Bayesiana usando a biblioteca **pgmpy
 
 ## Git Clone
 
-git clone https://github.com/SandAyla/redebayesianaIAC
+"git clone https://github.com/SandAyla/redebayesianaIAC"
 
-cd redebayesianaIAC
+"cd redebayesianaIAC"
 
 ### Dependências
 
@@ -19,6 +19,10 @@ Para rodar este projeto, você precisa de um ambiente Python com a biblioteca `p
    Abra um terminal e execute:
    
    - pip install pgmpy
+     
+     OU
+     
+   - pip install git+https://github.com/pgmpy/pgmpy.git@dev
      
 ### Execução
 
