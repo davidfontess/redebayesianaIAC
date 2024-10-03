@@ -1,8 +1,8 @@
-from pgmpy.models import BayesianModel
+from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 
 #Definicao da estrutura do modelo. Vinculos 
-model = BayesianModel([('H', 'D'), ('D', 'S'), ('D', 'E')])
+model = BayesianNetwork([('H', 'D'), ('D', 'S'), ('D', 'E')])
 
 #Criação das tabelas de probabilidade condicional
 #variable_card define o número de valores possíveis que a variável pode assumir
@@ -19,4 +19,4 @@ cpd_e = TabularCPD(variable='E', variable_card=2, values=[[0.9, 0.05],[0.1, 0.95
 #Associando CPD ao modelo
 model.add_cpds(cpd_h, cpd_d, cpd_s, cpd_e)
 
-model.check_model()
+print(model.get_cpds('S'))
